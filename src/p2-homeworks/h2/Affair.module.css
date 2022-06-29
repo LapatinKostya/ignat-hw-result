@@ -1,0 +1,18 @@
+.affairWrapper {
+    display: flex;
+
+}
+.high {
+    color: red;
+}
+.middle {
+    color: yellow;
+}
+.low {
+    color: greenyellow;
+}
+.tasks {
+    margin: 0 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
