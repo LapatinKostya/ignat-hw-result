@@ -1,18 +1,21 @@
 .affairWrapper {
     display: flex;
-
+    justify-content: space-between;
 }
 
 .high {
     color: red;
+    margin: 5px;
 }
 
 .middle {
     color: yellow;
+    margin: 5px;
 }
 
 .low {
     color: greenyellow;
+    margin: 5px;
 }
 
 .tasks {
@@ -25,18 +28,11 @@
     text-decoration: none;
     padding-top: 9px;
     color: #a675b3;
-    display: block;
     margin: 5px;
-
 }
 .name {
-    width: 50%;
+    width: 200px;
     margin: 5px 40px;
-    padding-left: 30px;
-}
-
-.priority {
-    margin: 5px;
 }
 
 .button:not(.active) {

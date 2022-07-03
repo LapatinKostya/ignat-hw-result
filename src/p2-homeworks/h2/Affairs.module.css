@@ -1,8 +1,8 @@
 .wrapper {
-    width: 50%;
+    width: 30%;
 }
 
 .affairWrapper {
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
 }
