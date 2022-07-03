@@ -1,6 +1,7 @@
 import React, {Dispatch, SetStateAction} from 'react'
 import Affair from './Affair'
 import {AffairType, FilterType} from './HW2'
+import classes from "./Affairs.module.css";
 
 type AffairsPropsType = { // need to fix any
     data: Array<AffairType>
@@ -14,6 +15,8 @@ function Affairs(props: AffairsPropsType) {
             key={a._id} // кеи ОБЯЗАТЕЛЬНЫ в 99% - так что лучше их писать всегда при создании компонент в мапе
             affair={a}
             deleteAffairCallback={props.deleteAffairCallback}
+            priorityClass={a.priority}
+
         />
     ))
 
@@ -31,14 +34,16 @@ function Affairs(props: AffairsPropsType) {
     }
 
     return (
-        <div>
+        <div className={classes.wrapper}>
 
             {mappedAffairs}
 
-            <button onClick={setAll}>All</button>
-            <button onClick={setHigh}>High</button>
-            <button onClick={setMiddle}>Middle</button>
-            <button onClick={setLow}>Low</button>
+            <div className={classes.affairWrapper}>
+                <button onClick={setAll}>All</button>
+                <button onClick={setHigh}>High</button>
+                <button onClick={setMiddle}>Middle</button>
+                <button onClick={setLow}>Low</button>
+            </div>
         </div>
     )
 }
