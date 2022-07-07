@@ -16,7 +16,7 @@ function HW3() {
         const userId = v1()
         setUsers([...users, {_id: userId, name: name}]) // need to fix
     }
-
+    console.log(users)
     return (
         <div>
             <hr/>

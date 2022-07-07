@@ -23,7 +23,6 @@ const Greeting: React.FC<GreetingPropsType> = (
                 onKeyDown={onEnter}
                 error={error}
             />
-            {/*<button onClick={addUser}>add</button>*/}
             <SuperButton onClick={addUser}>add</SuperButton>
             <span>{totalUsers}</span>
         </div>

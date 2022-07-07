@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+
+    transition-duration: 500ms;
+    transform: translate(-350px);
+}
+.header:hover {
+    transition-duration: 1000ms;
+    transform: translate(0);
+}
+.link {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: blue;
+}
+.link:active {
+    color: red;
+}
+.menu {
+    border-radius: 10px;
+    padding: 4px;
+    margin: 10px;
+    background-color: aqua;
+    min-width: 50px;
+}

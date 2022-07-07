@@ -1,4 +1,4 @@
-import React, {ChangeEvent, useState,KeyboardEvent} from 'react'
+import React, {ChangeEvent, useState, KeyboardEvent} from 'react'
 import Greeting from './Greeting'
 import {UserType} from "./HW3";
 
@@ -32,7 +32,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
         }
 
     }
-    const onEnter = (e:KeyboardEvent<HTMLInputElement>) => {
+    const onEnter = (e: KeyboardEvent<HTMLInputElement>) => {
         if (e.key === 'Enter') {
             addUser()
         }
