@@ -10,7 +10,7 @@ function Header() {
             <NavLink to={PATH.PRE_JUNIOR} className={classes.link}>pre-junior</NavLink>
             <NavLink to={PATH.JUNIOR} className={classes.link}>junior</NavLink>
             <NavLink to={PATH.JUNIOR_PLUS} className={classes.link}>junior-plus</NavLink>
-            <div className={classes.menu}></div>
+            <div className={classes.menu}>menu</div>
         </div>
 
     )
